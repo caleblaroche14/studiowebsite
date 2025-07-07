@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunset Run Studio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff9966, #ff5e62);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #222;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .audio-player {
+      margin-top: 10px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .contact-form input, .contact-form textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact-form button {
+      background-color: #ff5e62;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .about {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .about img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sunset Run Studio</h1>
+    <p>Helping local artists turn their song ideas into professional tracks — without the pressure or high cost.</p>
+  </header>
+
+  <section class="about">
+    <!-- (placeholder) Profile image -->
+    <img src="(placeholder-image.jpg)" alt="Studio Owner" />
+    <div>
+      <h2>About Me</h2>
+      <p>Hey, I’m Caleb — the producer and mixer behind Sunset Run Studio in Franklin County, VT. With over 12 years of experience, I’ve produced EDM albums as Kid Zion, metal with DoomWarden, and synthwave/indie tracks on Terminate and Stay Resident. I specialize in mixing, mastering, songwriting, and helping artists bring their ideas to life — no experience required.</p>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Services & Pricing</h2>
+    <table>
+      <tr>
+        <th>Service</th>
+        <th>Price</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Mixing</td>
+        <td>$100/track</td>
+        <td>Pro-level mix with FX, vocal tuning, cleanup, and revisions.</td>
+      </tr>
+      <tr>
+        <td>Mastering</td>
+        <td>$40/track</td>
+        <td>Final polish: loudness, EQ, stereo glue, streaming-ready.</td>
+      </tr>
+      <tr>
+        <td>Production</td>
+        <td>$200–$300/song</td>
+        <td>From voice memo or chord idea to full track. Includes mixing & mastering.</td>
+      </tr>
+      <tr>
+        <td>Recording</td>
+        <td>$30/hr</td>
+        <td>For vocals, guitar, bass, keys. Light drum options.</td>
+      </tr>
+      <tr>
+        <td>Songwriting Help</td>
+        <td>$40/hr</td>
+        <td>Lyric writing, melodies, structure help.</td>
+      </tr>
+      <tr>
+        <td>Distribution</td>
+        <td>$25 or free with bundle</td>
+        <td>I’ll handle publishing your music to Spotify, Apple, etc.</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="audio">
+    <h2>Audio Examples</h2>
+    <!-- (audio) Replace these with your real examples -->
+    <p><strong>Kid Zion – Example Track</strong></p>
+    <audio controls class="audio-player">
+      <source src="(placeholder-audio.mp3)" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p><strong>DoomWarden – Metal Example</strong></p>
+    <audio controls class="audio-player">
+      <source src="(placeholder-audio.mp3)" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p><strong>Terminate and Stay Resident – Indie/Synthwave</strong></p>
+    <audio controls class="audio-player">
+      <source src="(placeholder-audio.mp3)" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form" onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sunset Run Studio</p>
+    <!-- (placeholder) Social media links -->
+    <p>
+      <a href="#" style="color:white;">Instagram</a> |
+      <a href="#" style="color:white;">Facebook</a> |
+      <a href="#" style="color:white;">Email</a>
+    </p>
+  </footer>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      alert("Thanks for reaching out! I’ll get back to you soon.");
+    }
+  </script>
+
+</body>
+</html>
